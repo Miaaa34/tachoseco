@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos, Planes y Cuidado Ambiental</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(a%CC%81rbol-medio-ambiente.jpg); /* Fondo con imagen */
+            background-size: cover; /* Cubrir toda la pantalla */
+            background-position: center center; /* Centrar la imagen */
+            color: #fff; /* Color de texto claro para mejor contraste */
+        }
+
+        header {
+            background: linear-gradient(90deg, #28a745, #20c997);
+            color: white;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .carousel-inner img {
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .carousel-caption h5 {
+            font-size: 2rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .carousel-caption p {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #17a2b8;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .info-box {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .info-box:hover {
+            transform: scale(1.05);
+        }
+
+        .highlight {
+            background-color: #ffc107;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .container-info {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Colores llamativos para los cuadros */
+        .info-box-green {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .info-box-yellow {
+            background-color: #ffc107;
+            color: white;
+        }
+
+        .info-box-blue {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .info-box-purple {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .info-box-red {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        /* Botón "Ver más" con estilo neón */
+        .btn-more {
+            background-color: #17a2b8;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 10px #17a2b8, 0 0 20px #17a2b8, 0 0 30px #17a2b8;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-more:hover {
+            background-color: #138496;
+            box-shadow: 0 0 20px #17a2b8, 0 0 40px #17a2b8, 0 0 60px #17a2b8;
+        }
+
+        .hidden-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Estilos para imágenes al lado de los textos */
+        .info-box-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info-box-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            max-height: 200px;
+        }
+
+        .info-box-content div {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        /* Estilo para negrita personalizada */
+        .bold-text {
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cuidado Ambiental</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#objetivos">Objetivos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planes">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contenedores">Contenedores Amarillos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrusel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="alumnas-juana-alarco-01.jpeg" class="d-block w-100" alt="Educación Ambiental">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Educación Ambiental</h5>
+                        <p>Contribuyendo al cuidado del planeta desde las aulas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Secciones de información -->
+        <section id="objetivos">
+            <h2 class="section-title">Objetivos</h2>
+            <div class="container">
+                <div class="info-box info-box-green">
+                    <div class="info-box-content">
+                        <div>
+                            <p><span class="bold-text">Objetivo Principal:</span> Promover una cultura de reciclaje entre los estudiantes y la comunidad educativa, enfocándose en la correcta separación de residuos, especialmente botellas plásticas. Este objetivo busca sensibilizar a todos los miembros de la comunidad educativa sobre el impacto del reciclaje en la preservación del medio ambiente y en la reducción de la contaminación.</p>
+                            <a href="javascript:void(0)" class="btn-more" onclick="toggleContent('content1')">Ver más</a>
+                            <div id="content1" class="hidden-content">
+                                <p>Además, se promoverán hábitos de consumo responsable y el uso de materiales reciclables en el aula...</p>
+                                <p>Este objetivo busca crear conciencia sobre la importancia del reciclaje y cómo contribuye a un entorno más limpio.</p>
+                            </div>
+                        </div>
+                        <img src="images%20(6).jfif" alt="Objetivo 1">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans -->
+        <section id="planes">
+            <h2 class="section-title">Planes</h2>
+            <div class="container">
+                <div class="info-box info-box-blue">
+                    <div class="info-box-content">
+                        <div>
+                            <p><span class="bold-text">Plan de Reciclaje:</span> Este plan involucra a estudiantes, docentes y personal administrativo en el proceso de reciclaje. Consiste en recolectar residuos plásticos, clasificarlos y entregarlos a empresas recicladoras, promoviendo la reducción de residuos sólidos y favoreciendo la economía circular.</p>
+                            <a href="javascript:void(0)" class="btn-more" onclick="toggleContent('content2')">Ver más</a>
+                            <div id="content2" class="hidden-content">
+                                <p>El plan incluirá actividades educativas sobre la importancia del reciclaje y su impacto positivo en el medio ambiente...</p>
+                                <p>Los estudiantes serán los principales protagonistas en este proceso, liderando la recolección de los residuos y promoviendo la cultura del reciclaje.</p>
+                            </div>
+                        </div>
+                        <img src="images%20(2).jfif" alt="Plan de Reciclaje">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenedores Amarillos -->
+        <section id="contenedores">
+            <h2 class="section-title">Contenedores Amarillos</h2>
+            <div class="container">
+                <div class="info-box info-box-yellow">
+                    <div class="info-box-content">
+                        <div>
+                            <p><span class="bold-text">Contenedores Amarillos:</span> Serán colocados en diversas áreas de la escuela para facilitar la separación de residuos plásticos. Estos contenedores estarán destinados exclusivamente para la recolección de botellas plásticas y otros materiales reciclables...</p>
+                            <a href="javascript:void(0)" class="btn-more" onclick="toggleContent('content3')">Ver más</a>
+                            <div id="content3" class="hidden-content">
+                                <p>Los contenedores estarán señalizados adecuadamente y se realizarán campañas de sensibilización para motivar a la comunidad educativa a utilizarlos correctamente...</p>
+                            </div>
+                        </div>
+                        <img src="WhatsApp%20Image%202024-12-04%20at%201.11.40%20AM.jpeg" alt="Contenedores Amarillos">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para mostrar u ocultar contenido adicional
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
